@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apex F1 | Register</title>
+    <link rel="icon" href="/assets/favicon-CzLWzuJZ.svg" type="image/svg+xml" />
+    <script defer src="https://unpkg.com/lucide@latest"></script>
+    <script type="module" crossorigin src="/assets/app-8fW5rx6T.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/app-lGfll6KY.css">
+  </head>
+  <body data-page="register">
+    <nav class="navbar">
+      <a class="brand" href="index.html"><span>Apex</span>F1</a>
+      <button class="nav-toggle" aria-label="Open menu"><i data-lucide="menu"></i></button>
+      <div class="nav-links">
+        <a href="index.html">Home</a><a href="cars.html">Cars</a><a href="drivers.html">Drivers</a><a href="schedule.html">Schedule</a><a href="register.html">Register</a><a href="contact.html">Contact</a>
+      </div>
+    </nav>
+    <main class="auth-shell">
+      <section class="auth-visual" style="--hero-img:url('https://images.pexels.com/photos/1592384/pexels-photo-1592384.jpeg?auto=compress&cs=tinysrgb&w=1600')">
+        <div><p class="eyebrow">Fan Access</p><h1>Join the Ultimate Racing Community</h1><p>Save favorite teams, follow drivers, and receive race-weekend briefings.</p></div>
+      </section>
+      <section class="form-panel">
+        <form id="registerForm" novalidate>
+          <h2>Create Account</h2>
+          <div class="social-row"><button type="button"><i data-lucide="chrome"></i>Google</button><button type="button"><i data-lucide="apple"></i>Apple</button></div>
+          <label>Full Name<input name="name" required minlength="2" /></label>
+          <label>Email<input name="email" type="email" required /></label>
+          <label>Username<input name="username" required minlength="4" /></label>
+          <label>Password<input id="password" name="password" type="password" required minlength="8" /></label>
+          <div class="strength"><span></span></div>
+          <label>Confirm Password<input name="confirm" type="password" required /></label>
+          <label>Country<input name="country" required /></label>
+          <label>Favorite Team<select name="team" required><option value="">Select team</option><option>McLaren</option><option>Ferrari</option><option>Red Bull Racing</option><option>Mercedes</option><option>Aston Martin</option></select></label>
+          <label>Favorite Driver<select name="driver" required><option value="">Select driver</option><option>Max Verstappen</option><option>Lando Norris</option><option>Charles Leclerc</option><option>Lewis Hamilton</option><option>Oscar Piastri</option></select></label>
+          <p class="form-message" id="registerMessage"></p>
+          <button class="btn primary" type="submit"><i data-lucide="flag"></i>Join Community</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

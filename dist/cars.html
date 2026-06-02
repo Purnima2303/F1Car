@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apex F1 | About Cars</title>
+    <link rel="icon" href="/assets/favicon-CzLWzuJZ.svg" type="image/svg+xml" />
+    <script defer src="https://unpkg.com/lucide@latest"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script type="module" crossorigin src="/assets/app-8fW5rx6T.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/app-lGfll6KY.css">
+  </head>
+  <body data-page="cars">
+    <div class="speed-lines" aria-hidden="true"></div>
+    <nav class="navbar">
+      <a class="brand" href="index.html"><span>Apex</span>F1</a>
+      <button class="nav-toggle" aria-label="Open menu"><i data-lucide="menu"></i></button>
+      <div class="nav-links">
+        <a href="index.html">Home</a><a href="cars.html">Cars</a><a href="drivers.html">Drivers</a><a href="schedule.html">Schedule</a><a href="register.html">Register</a><a href="contact.html">Contact</a>
+      </div>
+    </nav>
+
+    <header class="hero page-hero" style="--hero-img:url('https://images.pexels.com/photos/5753860/pexels-photo-5753860.jpeg?auto=compress&cs=tinysrgb&w=2200')">
+      <div class="hero-overlay"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow">Engineering Theatre</p>
+        <h1>Modern Ground Effect Machines</h1>
+        <p>Carbon, hybrid power, downforce, and driver trust operating at impossible speed.</p>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="section-heading reveal"><p class="eyebrow">Evolution</p><h2>From Cigars To Carbon Rockets</h2></div>
+        <div class="timeline">
+          <article class="reveal"><span>1950s</span><h3>Front-engine bravery</h3><p>Minimal aero, narrow tires, and heroic mechanical grip.</p></article>
+          <article class="reveal"><span>Turbo Era</span><h3>Boost pressure wars</h3><p>Explosive power delivery changed race craft and reliability.</p></article>
+          <article class="reveal"><span>Hybrid Era</span><h3>Energy management</h3><p>V6 turbo hybrids fused electric deployment with combustion efficiency.</p></article>
+          <article class="reveal"><span>Modern</span><h3>Ground effect return</h3><p>Venturi floors make cars follow closer while staying brutally fast.</p></article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading reveal"><p class="eyebrow">Components</p><h2>Clickable Race Anatomy</h2></div>
+        <div class="component-grid">
+          <button data-spec="Front Wing|Controls wake direction and front-end balance through layered aerodynamic elements.">Front Wing</button>
+          <button data-spec="Rear Wing|Creates adjustable drag and downforce, including DRS for overtaking zones.">Rear Wing</button>
+          <button data-spec="Halo|Titanium cockpit protection engineered to survive severe impact loads.">Halo</button>
+          <button data-spec="Chassis|Carbon-fiber survival cell built for stiffness, safety, and packaging.">Chassis</button>
+          <button data-spec="Power Unit|1.6L turbo-hybrid system blending combustion power and energy recovery.">Power Unit</button>
+          <button data-spec="Tires|Pirelli compounds determine grip, degradation, and race strategy windows.">Tires</button>
+          <button data-spec="Steering Wheel|A command center for differential maps, brake balance, energy, and radio.">Steering Wheel</button>
+        </div>
+        <aside class="spec-readout reveal" id="componentReadout"><strong>Select a component</strong><p>Tap a card to inspect its role in the lap.</p></aside>
+      </section>
+
+      <section class="section spec-wall">
+        <div class="section-heading reveal"><p class="eyebrow">Technical Specs</p><h2>Numbers Behind The Noise</h2></div>
+        <div class="spec-grid">
+          <div class="stat reveal"><strong>1.6L V6</strong><span>Turbo Hybrid</span></div>
+          <div class="stat reveal"><strong>1000+</strong><span>Horsepower</span></div>
+          <div class="stat reveal"><strong>798 KG</strong><span>Minimum Weight</span></div>
+          <div class="stat reveal"><strong>370 KM/H</strong><span>Top Speed</span></div>
+          <div class="stat reveal"><strong>5G</strong><span>Cornering Load</span></div>
+          <div class="stat reveal"><strong>110 KG</strong><span>Race Fuel Limit</span></div>
+        </div>
+      </section>
+
+      <section class="section carousel-wrap">
+        <div class="section-heading reveal"><p class="eyebrow">Gallery</p><h2>Cars In Motion</h2></div>
+        <div class="carousel">
+          <button class="carousel-btn prev" aria-label="Previous image"><i data-lucide="chevron-left"></i></button>
+          <img id="carCarousel" loading="lazy" src="https://images.pexels.com/photos/12795/pexels-photo-12795.jpeg?auto=compress&cs=tinysrgb&w=1400" alt="Formula style car at speed" />
+          <button class="carousel-btn next" aria-label="Next image"><i data-lucide="chevron-right"></i></button>
+        </div>
+      </section>
+    </main>
+    <footer>© 2026 Apex F1. Unofficial motorsports fan experience.</footer>
+  </body>
+</html>

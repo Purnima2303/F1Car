@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apex F1 | Experience the Speed of Formula 1</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://images.pexels.com" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <script defer src="https://unpkg.com/lucide@latest"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script type="module" src="assets/js/app.js"></script>
+  </head>
+  <body data-page="home">
+    <div class="speed-lines" aria-hidden="true"></div>
+    <nav class="navbar">
+      <a class="brand" href="index.html"><span>Apex</span>F1</a>
+      <button class="nav-toggle" aria-label="Open menu"><i data-lucide="menu"></i></button>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="cars.html">Cars</a>
+        <a href="drivers.html">Drivers</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="register.html">Register</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </nav>
+
+    <header class="hero full-hero" style="--hero-img:url('https://images.pexels.com/photos/12795/pexels-photo-12795.jpeg?auto=compress&cs=tinysrgb&w=2200')">
+      <div class="hero-overlay"></div>
+      <div class="telemetry-panel">
+        <span>DRS ACTIVE</span><strong>341 KM/H</strong><small>Sector 3 purple</small>
+      </div>
+      <div class="hero-content reveal">
+        <p class="eyebrow">World Championship Platform</p>
+        <h1>Experience the Speed of Formula 1</h1>
+        <p>Explore the world's fastest motorsport championship.</p>
+        <div class="cta-row">
+          <a class="btn primary" href="cars.html"><i data-lucide="gauge"></i>Explore Cars</a>
+          <a class="btn secondary" href="drivers.html"><i data-lucide="user-round"></i>Meet Drivers</a>
+          <a class="btn ghost" href="schedule.html"><i data-lucide="calendar-days"></i>View Schedule</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section grid-section">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Race Weekend</p>
+          <h2>Live From The Limit</h2>
+          <p>Highlights, standings, and telemetry-inspired stats tuned for fans who track every tenth.</p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card wide reveal">
+            <img loading="lazy" src="https://images.pexels.com/photos/279100/pexels-photo-279100.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Race car lights at speed" />
+            <div>
+              <span>Latest Race Highlights</span>
+              <h3>Five laps of pure pressure</h3>
+              <p>Overtakes, pit strategy, and a late safety car restart rendered in cinematic race-control style.</p>
+            </div>
+          </article>
+          <article class="feature-card reveal">
+            <span>Upcoming Grand Prix</span>
+            <h3>Canadian GP</h3>
+            <p>Montreal brings heavy braking, low-grip exits, and walls close enough to punish every mistake.</p>
+          </article>
+          <article class="feature-card reveal">
+            <span>Fastest Lap</span>
+            <h3>1:13.078</h3>
+            <p>Purple final sector, soft tires, low fuel, and absolute commitment over the kerbs.</p>
+          </article>
+          <article class="feature-card reveal">
+            <span>Team Standings Preview</span>
+            <h3>McLaren vs Mercedes</h3>
+            <p>A constructor battle decided by setup windows, tire deg, and qualifying execution.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="stats-band">
+        <div class="stat reveal"><strong data-count="372">0</strong><span>Top Speed KM/H</span></div>
+        <div class="stat reveal"><strong data-count="1.80">0</strong><span>Fastest Pit Stop</span></div>
+        <div class="stat reveal"><strong data-count="24">0</strong><span>Circuits</span></div>
+        <div class="stat reveal"><strong data-count="22">0</strong><span>Drivers</span></div>
+        <div class="stat reveal"><strong data-count="76">0</strong><span>Seasons Completed</span></div>
+      </section>
+
+      <section class="section split-feature">
+        <div class="reveal">
+          <p class="eyebrow">Featured Drivers</p>
+          <h2>The Grid Is A Data Storm</h2>
+          <p>Every driver profile combines identity, team form, career markers, and comparison tools for head-to-head analysis.</p>
+          <a class="btn primary" href="drivers.html"><i data-lucide="users"></i>Open Driver Hub</a>
+        </div>
+        <div class="leaderboard reveal">
+          <div><span>1</span><strong>Kimi Antonelli</strong><em>Mercedes</em></div>
+          <div><span>2</span><strong>George Russell</strong><em>Mercedes</em></div>
+          <div><span>3</span><strong>Charles Leclerc</strong><em>Ferrari</em></div>
+          <div><span>4</span><strong>Lewis Hamilton</strong><em>Ferrari</em></div>
+        </div>
+      </section>
+    </main>
+
+    <footer>© 2026 Apex F1. Unofficial motorsports fan experience.</footer>
+  </body>
+</html>

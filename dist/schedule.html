@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apex F1 | Race Schedule</title>
+    <link rel="icon" href="/assets/favicon-CzLWzuJZ.svg" type="image/svg+xml" />
+    <script defer src="https://unpkg.com/lucide@latest"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script type="module" crossorigin src="/assets/app-8fW5rx6T.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/app-lGfll6KY.css">
+  </head>
+  <body data-page="schedule">
+    <div class="speed-lines" aria-hidden="true"></div>
+    <nav class="navbar">
+      <a class="brand" href="index.html"><span>Apex</span>F1</a>
+      <button class="nav-toggle" aria-label="Open menu"><i data-lucide="menu"></i></button>
+      <div class="nav-links">
+        <a href="index.html">Home</a><a href="cars.html">Cars</a><a href="drivers.html">Drivers</a><a href="schedule.html">Schedule</a><a href="register.html">Register</a><a href="contact.html">Contact</a>
+      </div>
+    </nav>
+    <header class="hero page-hero map-hero">
+      <div class="hero-overlay"></div>
+      <div class="hero-content reveal"><p class="eyebrow">2026 Calendar</p><h1>Race Schedule & Circuits</h1><p>Twenty-four Grands Prix across street circuits, classics, night races, and high-speed temples.</p></div>
+      <div class="world-map" aria-label="Formula 1 world map">
+        <button style="--x:43%;--y:45%">Monaco</button><button style="--x:39%;--y:37%">Silverstone</button><button style="--x:44%;--y:39%">Spa</button><button style="--x:83%;--y:48%">Suzuka</button><button style="--x:46%;--y:45%">Monza</button><button style="--x:75%;--y:64%">Singapore</button><button style="--x:60%;--y:56%">Abu Dhabi</button>
+      </div>
+    </header>
+    <main>
+      <section class="countdown-band">
+        <p>Next Grand Prix Countdown</p>
+        <div id="countdown" data-date="2026-06-07T18:30:00+05:30"></div>
+      </section>
+      <section class="section">
+        <div class="section-heading reveal"><p class="eyebrow">Calendar</p><h2>Interactive Schedule</h2></div>
+        <div class="table-wrap reveal"><table class="schedule-table"><thead><tr><th>Grand Prix</th><th>Country</th><th>Circuit</th><th>Date</th><th>Race Time</th><th>Status</th></tr></thead><tbody id="scheduleRows"></tbody></table></div>
+      </section>
+      <section class="section">
+        <div class="section-heading reveal"><p class="eyebrow">Circuits</p><h2>Track Intelligence</h2></div>
+        <div class="circuit-grid" id="circuitGrid"></div>
+      </section>
+    </main>
+    <footer>© 2026 Apex F1. Unofficial motorsports fan experience.</footer>
+  </body>
+</html>
